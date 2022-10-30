@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Drawing a Line</title>
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="jquery.line.js"></script>
+    <script type="text/javascript">
+      const parameters = window.location.search;
+      if (parameters) {
+        alert(parameters);
+      }
+      // function draw() {
+      //   let heightEntry = document.getElementById("heightEntry").value;
+      //   console.log("*** script heightEntry", heightEntry);
+      //   heightEntry = heightEntry.split(",");
+      //   let index = 0;
+      //   if (heightEntry) {
+      //     $.each(heightEntry, function (key, value) {
+      //       index++;
+      //       x1 = 10 + index * 50;
+      //       x2 = x1 + 20;
+      //       console.log("**** x2", x2);
+      //       const y1 = 50;
+      //       const y2 = y1;
+      //       $("#example").rectangle(x1, y1, x2, y2, value * 10, {
+      //         color: "red",
+      //       });
+      //     });
+      //   }
+      // }
+
+      // function send() {
+      //   const inputHeight = document.getElementById("height").value;
+      //   barHeights = inputHeight.split(",");
+      //   const heightEntry = document.getElementById("heightEntry");
+      //   heightEntry.value = barHeights;
+      //   console.log("*** send heightEntry", heightEntry.value);
+      //   draw();
+      // }
+    </script>
+    <link rel="stylesheet" href="default_css.css" />
+    <script src="./testBarchartCode.js"></script>
+  </head>
+
+  <body>
+    <h1>JavaScript - Drawing Bar Chart</h1>
+
+    <form id="myForm" action="" method="GET">
+      <label for="height">Heights of Bar Chart: </label>
+      <input type="text" name="height" id="height" />
+      <input type="hidden" name="heightEntry" id="heightEntry" />
+      <input
+        type="button"
+        id="btn"
+        value="Submit"
+        onclick="send($('#height').val(), {width: 50, height: 50}, 
+      $('#graph'))"
+      />
+    </form>
+    <br /><br />
+    <div id="graph"></div>
+  </body>
+</html>

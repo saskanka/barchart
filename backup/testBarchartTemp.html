@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Drawing a Line</title>
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="jquery.line.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#example").rectangle(100, 200, 120, 200, {
+          color: "red",
+          zindex: 1,
+        });
+        $("#example").rectangle(200, 200, 220, 200, {
+          color: "red",
+          zindex: 1,
+        });
+
+        // $("#s1").line(0, 0, 50, 50, { color: "pink" });
+        // $("#s2").line(0, 50, 50, 0, { color: "red" });
+      });
+    </script>
+    <link rel="stylesheet" href="default_css.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  </head>
+
+  <body>
+    <h1>JavaScript - Drawing a Line</h1>
+    <div id="example">
+      <!-- <div class="square" id="s1"></div>
+      <div class="square" id="s2"></div> -->
+    </div>
+
+    <!-- <canvas id="canvas" height="400" width="500"> </canvas> -->
+
+    <form id="myForm" action="" method="GET">
+      <label for="height">Heights of Bar Chart: </label>
+      <input type="text" id="height" />
+      <input type="button" id="btn" value="Submit" />
+    </form>
+
+    <script src="./testBarchartCode.js"></script>
+  </body>
+</html>
